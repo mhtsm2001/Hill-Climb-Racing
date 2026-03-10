@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initital-scale-1.0">
+  <title>Hill Climb Racing</title>
+  <link type="text/css" rel="stylesheet" href="/css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="scripts/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li style="display: none;" onclick="unmuteMainAudio()" id="unmuted">
+        <a>
+          <ion-icon name="volume-high-sharp"></ion-icon>unmute
+        </a>
+      </li>
+      <li id="muted" onclick="muteMainAudio()">
+        <a>
+          <ion-icon name="volume-mute-outline"></ion-icon>mute
+        </a>
+      </li>
+      <li><a href="bronnen.html">
+          <ion-icon name="megaphone-outline"></ion-icon>Bronnen
+        </a></li>
+      <li>
+        <a href="index.html">
+          <ion-icon name="home-outline"></ion-icon>Home
+        </a>
+      </li>
+      <li>
+        <a href="skins.html">
+          <ion-icon name="car-outline"></ion-icon>Skins
+        </a>
+      </li>
+      <li><a href="maps.html">
+          <ion-icon name="map-outline"></ion-icon>Maps
+        </a>
+      </li>
+      <li>
+        <a href="season.html">
+          <ion-icon name="game-controller-outline"></ion-icon>Seizoenen
+        </a>
+      </li>
+      <li>
+        <a href="shop.html">
+          <ion-icon name="cart-outline"></ion-icon>Shop
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <audio id="main_audio" controls autoplay loop>
+    <source src="resources/raw/game_music3.m4a" type="audio/m4a">
+    <source src="resources/raw/game_music3.mp3" type="audio/mp3">
+    <source src="resources/raw/game_music3.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+  <article>
+
+    <div class="shopContainer">
+
+      <div class="sCard">
+        <h2 class="sTitle">Logo Cup</h2>
+        <img class="sImg" src="resources/drawable/shop/cup_logo.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>10,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+      <div class="sCard">
+        <h2 class="sTitle">Blue Car Cup</h2>
+        <img class="sImg" src="resources/drawable/shop/cup_bluecar.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>15,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+      <div class="sCard">
+        <h2 class="sTitle">Police Car Cup</h2>
+        <img class="sImg" src="resources/drawable/shop/cup_policecar.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>20,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+      <div class="sCard">
+        <h2 class="sTitle">Logo Sweater</h2>
+        <img class="sImg" src="resources/drawable/shop/logo_sweater.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>20,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+      <div class="sCard">
+        <h2 class="sTitle">Red Car Sweater</h2>
+        <img class="sImg" src="resources/drawable/shop/redcar_sweater.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>25,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+      <div class="sCard">
+        <h2 class="sTitle">Moon Sweater</h2>
+        <img class="sImg" src="resources/drawable/shop/moon_sweater.png" alt="">
+        <div class="sDetail">
+          <ion-icon style="color: black;" name="cart"></ion-icon>
+          <p style="margin-right: 40%; ">0</p>
+          <p>€</p>
+          <p>25,00</p>
+          <button onclick="location.href='https://mijn.ing.nl/login';">Pay Now</button>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <footer>
+    <p>Copyright © 2022 Hill Climp. All rights
+      reserved.</p>
+  </footer>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

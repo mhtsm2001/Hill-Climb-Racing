@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initital-scale-1.0">
+  <title>Skins</title>
+  <link type="text/css" rel="stylesheet" href="/css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="skins-page">
+
+  <nav>
+    <ul>
+      <li style="display: none;" onclick="unmuteMainAudio()" id="unmuted">
+        <a>
+          <ion-icon name="volume-high-sharp"></ion-icon>unmute
+        </a>
+      </li>
+      <li id="muted" onclick="muteMainAudio()">
+        <a>
+          <ion-icon name="volume-mute-outline"></ion-icon>mute
+        </a>
+      </li>
+      <li><a href="bronnen.html">
+          <ion-icon name="megaphone-outline"></ion-icon>Bronnen
+        </a></li>
+      <li>
+        <a href="index.html">
+          <ion-icon name="home-outline"></ion-icon>Home
+        </a>
+      </li>
+      <li>
+        <a href="skins.html">
+          <ion-icon name="car-outline"></ion-icon>Skins
+        </a>
+      </li>
+      <li><a href="maps.html">
+          <ion-icon name="map-outline"></ion-icon>Maps
+        </a>
+      </li>
+      <li>
+        <a href="season.html">
+          <ion-icon name="game-controller-outline"></ion-icon>Seizoenen
+        </a>
+      </li>
+      <li>
+        <a href="shop.html">
+          <ion-icon name="cart-outline"></ion-icon>Shop
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <audio id="main_audio" controls autoplay loop>
+    <source src="resources/raw/game_music.m4a" type="audio/m4a">
+    <source src="resources/raw/game_music.mp3" type="audio/mp3">
+    <source src="resources/raw/game_music.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <header>
+
+    <!-- <h1>Skins</h1> -->
+
+
+    <div class="container">
+      <div class="carContainer">
+        <h2 class="title">Hill Climber</h2>
+        <ion-icon id="back" onclick="carBack()" class="movment-controle" name="arrow-back-circle"></ion-icon>
+        <img id="car">
+        <ion-icon id="forward" onclick="carForward()" class="movment-controle" name="arrow-forward-circle"></ion-icon>
+      </div>
+      <div class="tip">
+        Je kan ⇤ arrows keys ⇥ gebruiken voor movment
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <footer>
+    <p>Copyright © 2022 Hill Climp. All rights
+      reserved.</p>
+  </footer>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+
+</html>

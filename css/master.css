@@ -1,0 +1,435 @@
+/* * {
+  margin: 0 auto;
+  padding: 0;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-bg: #675339;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  color: #fff;
+  background: black;
+}
+
+h1,
+h2,
+h3 {
+  color: #abea51;
+}
+
+.title {
+  font-size: 50px;
+  color: black;
+  display: block;
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+
+}
+
+
+
+/* navigation menu */
+
+header {
+  /* background: lightblue url('resources/drawable/background.jpg') no-repeat fixed center; */
+  background: url('/resources/drawable/background.png') no-repeat center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+}
+
+.skins-page header {
+  height: 100vh;
+  position: relative;
+  background: lightblue;
+}
+
+
+
+@keyframes popUp {
+  0% {
+    transform: scale(.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.9);
+  }
+}
+
+
+.logo {
+  display: flex;
+  animation: popUp 1.3s ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+
+.logo img {
+  width: clamp(250px, 40vw, 450px);
+  margin-bottom: 20vh;
+}
+
+
+nav {
+  display: grid;
+  justify-content: flex-end;
+  padding: 10px;
+  background: #000;
+  list-style: none;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  height: 25%;
+}
+
+.main {
+  position: fixed;
+  width: 100%;
+}
+
+nav * {
+  margin: 0;
+}
+
+
+nav ul li {
+  display: inline-block;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  background: #fff;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s ease;
+}
+
+nav ul li:hover::after {
+  display: block;
+  width: 100%;
+
+}
+
+nav ul li a {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a ion-icon {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+article {
+  padding: 2rem clamp(5px, 15vw, 25vw);
+  font-size: 1.5rem;
+  background-color: var(--color-bg);
+}
+
+.video {
+  width: 100%;
+  height: 400px;
+  padding: 2px;
+  background: #abea51;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: black;
+  padding: 2rem clamp(5px, 15vw, 25vw);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carContainer,
+.stageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+#car,
+#stage {
+  border: none;
+}
+
+.movment-controle {
+  font-size: 100px;
+  color: #599308;
+  cursor: pointer;
+}
+
+audio {
+  display: none;
+}
+
+.tip {
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.seasonContainer {}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  text-align: center;
+}
+
+.card figure .sImage {
+  width: 400px;
+}
+
+.sImage {
+  background: #000;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.sImage:hover {
+  transform: scale(1.1);
+  background: #abea51;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.linked-img {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.linked-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.sTitle {
+  color: white;
+}
+
+.bronnenContainer {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.bronnenContainer .bCard .bLink {
+  text-decoration: none;
+  color: #abea51;
+  margin-top: 200px;
+}
+
+.bronnenContainer .bCard .bTitle {
+  font-size: 35px;
+  margin: 0;
+}
+
+.bronnenContainer .bCard {
+  padding: 10px 20px;
+  background: #5f789e;
+  margin-top: 20px;
+}
+
+.bronnenContainer .bCard .bImg {
+  max-height: 90px;
+  width: 150px;
+  display: inline-block;
+}
+
+.bronnenContainer .bCard .bDetail {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.shopContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+}
+
+.shopContainer .sCard {
+  background: #bee1f7;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.shopContainer .sCard .sTitle {
+  font-size: 40px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10%;
+  background: #5f789e;
+
+}
+
+.shopContainer .sDetail {
+  /* display: grid; */
+}
+
+.shopContainer .sDetail p {
+  text-align: end;
+  color: #000;
+  font-size: 28px;
+  display: inline-block;
+}
+
+.shopContainer .sDetail button {
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background: #5f789e;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.shopContainer .sDetail button:hover {
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background: #65baab;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+
+.shopContainer .sCard .sImg {
+  width: 200px;
+}
+
+
+
+@media only screen and (max-width: 1800px) {
+
+  .movment-controle {
+    font-size: 40px;
+  }
+
+  .tip {
+    font-size: 20px;
+  }
+
+  .title,
+  .sTitle,
+  .bTitle {
+    font-size: 20px;
+  }
+
+  .shopContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+  .seasonContainer {
+    display: inline-block;
+  }
+
+
+  .carContainer {
+    grid-template-columns: 1fr;
+  }
+
+  #car,
+  #stage {
+    width: 400px;
+  }
+
+  .title,
+  .sTitle,
+  .bTitle {
+    font-size: 20px;
+  }
+
+  .shopContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .carContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .title,
+  .sTitle,
+  .bTitle {
+    font-size: 16px;
+  }
+
+  .shopContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .carContainer {
+    grid-template-columns: 1fr;
+  }
+
+  #car,
+  #stage {
+    width: 200px;
+  }
+
+
+}
